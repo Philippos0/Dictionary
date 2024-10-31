@@ -1,0 +1,8 @@
+<html>
+<body>
+<a href="Login Page.jsp"><H1>Log In</H1><br>  
+<a href="Registration Form.html"><H1>Sign up</H1><br> 
+    
+</body>
+</html>
+

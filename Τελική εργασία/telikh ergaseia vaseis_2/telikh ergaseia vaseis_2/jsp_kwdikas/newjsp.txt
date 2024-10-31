@@ -1,0 +1,26 @@
+<%@ page import ="java.sql.*" %>
+<%
+    try{
+        String username = request.getParameter("uname");   
+        String password = request.getParameter("upassword");
+        Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/site2?" + "user=root&password=");    
+        PreparedStatement pst = conn.prepareStatement("Select username,password from register where username=? and password=?");
+        pst.setString(1, username);
+        pst.setString(2, password);
+        ResultSet rs = pst.executeQuery();                        
+        if(rs.next())           
+           out.println("TA STOIXEIA SOU HTAN SWSTA");        
+        else
+           out.println("TA STOIXEIA SOU HTAN LATHOS");            
+   }
+   catch(Exception e){       
+       out.println("KATI PHGE LATHOS !! PROSPATHISE XANA");       
+   }      
+%>
+<h5> Welcome!!!</h5>
+<div>go to home page!</div>
+
+<form name="form1" method="post" action="index.html">
+             <input type="submit" value="Go back!!!!"> 
+ </form> 
