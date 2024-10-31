@@ -1,0 +1,20 @@
+create database bank;
+use bank;
+
+create table accounts(
+id varchar(50) not null,
+firstname varchar(50),
+surname varchar(50),
+contact varchar(100),
+balance bigint(17)default 0,
+frozen int(4) default 1,
+primary key (id));
+
+insert into accounts(id,firstname,surname,contact) values('20','Bill','Jonathan','+30 6912345689 billyj@gmail.com');
+insert into accounts(id,firstname,surname,contact) values('30','George','Smith','+30 6913243546 Sgeorge@gmail.com');
+
+
+
+Η σύνδεση πραγματοποιήθηκε σε διαφορετική από αυτή του root.
+Όνομα σύνδεσης: Athanasopoulos
+Κωδικός: Κενό
