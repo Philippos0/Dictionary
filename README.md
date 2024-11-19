@@ -1,6 +1,6 @@
 ----Α-15 MyVector-----
 My version of vector in c++
-Implementing multiple functions to the homemade vector and tresting it
+Implementing multiple functions to the homemade vector and testing it
 
 
 ----Α-5 Dictionary-----
