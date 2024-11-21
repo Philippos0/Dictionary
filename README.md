@@ -30,7 +30,7 @@ Reading and creating student objects from the contents of a file.
 
 
 ----Bank-----
-A bank system in java using sockets so the client and server can talk to each other using a port. A demonstration is in "Τελική Εργασία".
+A bank system in java using sockets so the client and server can talk to each other using a port.
 
 ----Java CRUD-Database-----
 A simple site and gui where you can interact with a database that the site is connected to.
