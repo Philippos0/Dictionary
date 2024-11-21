@@ -1,0 +1,29 @@
+<%-- 
+    Document   : validate
+    Created on : May 26, 2017, 6:10:21 PM
+    Author     : Philip
+--%>
+
+<%@ page import ="java.sql.*" %>
+<%
+    try{
+        String username = request.getParameter("username");   
+        String password = request.getParameter("password");
+        Class.forName("com.mysql.jdbc.Driver");  // MySQL database connection
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/site2?" + "user=root&password=0000");    
+        PreparedStatement pst = conn.prepareStatement("Select username,passwrd from register where username=? and passwrd=?");
+        pst.setString(1, username);
+        pst.setString(2, password);
+        ResultSet rs = pst.executeQuery();                        
+        if(rs.next())           
+           out.println("Valid login credentials");
+           
+        else
+           out.println("Invalid login credentials");            
+   }
+   catch(Exception e){       
+       out.println("Something went wrong !! Please try again");       
+   }      
+%>
+<form name="form1" method="post" action="Login Page.jsp">
+             <input type="submit" value="Return to menu">

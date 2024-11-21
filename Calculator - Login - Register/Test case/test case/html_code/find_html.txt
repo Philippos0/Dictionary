@@ -1,0 +1,24 @@
+<html>
+    <head>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        
+    </head>
+<body>
+    
+
+    <form action="viografika5.jsp">
+   pathste edw to onoma pou thelete:<br>
+  <input type="text" name="uname"><br>
+ pathste edw to epitheto pou thelete:<br>
+  <input type="text" name="usurname"><br>
+  
+  <input type="submit" value="search"><br>
+ 
+</form>
+
+
+
+</body>
+</html>
